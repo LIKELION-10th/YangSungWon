@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="container">
+    </br></br>
+        <h1>기본 페이지</h1>
+    </br></br>
+        <div class="card" style="width: 18rem;">
+            <img src="/static/img/me.jpg" class="card-img-top" alt="sungwon profile img">
+            <div class="card-body">
+                <h5 class="card-title">Profile</h5>
+                <p class="card-text">성신여대 재학 중</p>
+                <table frame=void>
+                    <tr>
+                        <td sytle="border-right: hidden;">이름</td>
+                        <td sytle="border-right: hidden;">&nbsp;&nbsp;양성원</td>
+                    </tr>
+                    <tr>
+                        <td sytle="border-right: hidden;">생년월일</td>
+                        <td sytle="border-right: hidden;">&nbsp;&nbsp;2001.01.01</td>
+                    </tr>
+                    <tr>
+                        <td sytle="border-right: hidden;">나이</td>
+                        <td sytle="border-right: hidden;">&nbsp;&nbsp;22세</td>
+                    </tr>
+                    <tr>
+                        <td sytle="border-right: hidden;">학력</td>
+                        <td sytle="border-right: hidden;">&nbsp;&nbsp;성신여대 재학 중</td>
+                    </tr>
+                </table>
+                <a href="{% url 'profile' %}" class="btn btn-primary">양성원 더 알아보기</a>
+            </div>
+        </div>
+        
+    </br></br>
+        <a href="{% url 'new' %}">댓글 작성</a>
+    </div>
+
+{% endblock %}
